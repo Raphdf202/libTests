@@ -1,4 +1,4 @@
-name: Build APK
+name: Publish to gh Packages
 
 on: release
 
