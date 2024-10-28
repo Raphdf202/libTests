@@ -8,6 +8,7 @@ import net.raphdf201.lib.Constants;
 public class Utils {
     /**
      * A method to counter joystick drift by returning 0 if the value is below a certain level
+     *
      * @param value the value of your joystick, below 1
      * @return the original value or 0 if its below {@link net.raphdf201.lib.Constants#controllerDeadzone}
      */
@@ -20,7 +21,8 @@ public class Utils {
 
     /**
      * A method to counter joystick drift by returning 0 if the value is below a certain level
-     * @param value the value of your joystick, below 1
+     *
+     * @param value    the value of your joystick, below 1
      * @param deadzone the deadzone value
      * @return the original value or 0 if it's below the deadzone
      */
