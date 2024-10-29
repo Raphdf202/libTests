@@ -16,10 +16,10 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Raphdf201/lib")
+            url = uri("https://maven.pkg.github.com/raphdf201/lib")
             credentials {
                 username = System.getenv("USERNAME")
-                password = System.getenv("TOKEN")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }

@@ -5,6 +5,11 @@ on: release
 jobs:
   Gradle:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
     steps:
       - name: checkout code
         uses: actions/checkout@v2
@@ -19,5 +24,4 @@ jobs:
       - name: Publish package
         run: ./gradlew publish
         env:
-         TOKEN: ${{ secrets.TOKEN }}
-         USERNAME: "Raphdf201"
+         USERNAME: "raphdf201"
