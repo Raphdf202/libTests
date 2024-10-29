@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b11afc0-bae2-4279-beaa-e8fd983ba6c9" name="Changes" comment="Added publishing workflow and dependabot">
-      <change afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="9b11afc0-bae2-4279-beaa-e8fd983ba6c9" name="Changes" comment="Updated workflow">
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/raphdf201/lib/controller/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/raphdf201/lib/controller/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +70,18 @@
     &quot;assignee&quot;: &quot;Raphdf201&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Raphdf201/lib.git&quot;,
-    &quot;accountId&quot;: &quot;0684f023-4f46-4fe7-9f76-a9c9de0316d7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Raphdf201/lib.git",
+    "accountId": "eabda99f-fc3f-45b9-8020-d366991f5e50"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2o4CPxL1DxvBPiSOiGAkoz6JStL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -101,6 +95,7 @@
     "ACTIVE_CLOUD_PROJECT_NAME": "MediaPlayer",
     "ACTIVE_CLOUD_PROJECT_NUMBER": "322069196760",
     "Gradle.lib [build].executor": "Run",
+    "Gradle.lib [publishMavenPublicationToGitHubPackagesRepository].executor": "Run",
     "Gradle.lib [publish].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.google.cloudcode.ide_session_index": "20241028_0003",
@@ -113,11 +108,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.lib [build]">
+  <component name="RunManager" selected="Gradle.lib [publish]">
     <configuration name="lib [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,12 +138,34 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="lib [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="lib [publishMavenPublicationToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishMavenPublicationToGitHubPackagesRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="lib [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--debug" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -164,8 +184,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.lib [build]" />
         <item itemvalue="Gradle.lib [publish]" />
+        <item itemvalue="Gradle.lib [publishMavenPublicationToGitHubPackagesRepository]" />
+        <item itemvalue="Gradle.lib [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +209,7 @@
       <workItem from="1730119442117" duration="5523000" />
       <workItem from="1730136198609" duration="370000" />
       <workItem from="1730136597173" duration="275000" />
+      <workItem from="1730231298245" duration="2240000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <option name="closed" value="true" />
@@ -205,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730120677326</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated workflow">
+      <option name="closed" value="true" />
+      <created>1730232305775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730232305775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +245,7 @@
     <MESSAGE value="Added project" />
     <MESSAGE value="Added removeDeadzone() methods" />
     <MESSAGE value="Added publishing workflow and dependabot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added publishing workflow and dependabot" />
+    <MESSAGE value="Updated workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated workflow" />
   </component>
 </project>
