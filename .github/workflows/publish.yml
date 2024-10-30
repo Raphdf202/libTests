@@ -21,7 +21,14 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - name: Make gradle executable
         run: chmod +x ./gradlew
-      - name: Build code
-        run: ./gradlew build
-      - name: Publish package
-        run: ./gradlew publish
+      - name: Build code, javadoc and publish
+        run: ./gradlew clean build javadoc publish
+      - name: Upload javadocs as artifact
+        run: zip ./build/docs/javadoc
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libJavadoc
+          path: build/docs/javadoc.zip
+          if-no-files-found: error
+          overwrite: true
+
