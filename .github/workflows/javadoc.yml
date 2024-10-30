@@ -17,7 +17,7 @@ jobs:
       - name: Make gradle executable
         run: chmod +x ./gradlew
       - name: Build javadoc
-        run: ./gradlew clean build javadoc
+        run: ./gradlew clean build javadoc --scan
       - name: Upload javadocs as artifact
         run: zip -r javadoc.zip ./build/docs/javadoc
       - uses: actions/upload-artifact@v4
