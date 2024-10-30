@@ -3,6 +3,13 @@ plugins {
     id("maven-publish")
 }
 
+if (hasProperty("buildScan")) {
+    extensions.findByName("buildScan")?.withGroovyBuilder {
+        setProperty("termsOfServiceUrl", "https://gradle.com/terms-of-service")
+        setProperty("termsOfServiceAgree", "yes")
+    }
+}
+
 group = "net.raphdf201"
 version = "0.1"
 
